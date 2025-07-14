@@ -51,7 +51,7 @@ class stateParser:
     __TrunkData=None
 
     def __device(self):
-        if self.device==None:
+         if "hostname" not in self.device:
             self.device={
                 "hostname":"",                
                 "sw_version":"",
